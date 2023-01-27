@@ -1,7 +1,7 @@
 USE [HI520_Medical_DB]
 GO
 
-/****** Object:  Table [dbo].[Patients]    Script Date: 1/27/2023 3:40:23 PM ******/
+/****** Object:  Table [dbo].[Patients]    Script Date: 1/27/2023 3:52:42 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -15,6 +15,9 @@ CREATE TABLE [dbo].[Patients](
 	[Gender] [bit] NOT NULL,
 	[EmergencyContactPhoneNumber] [int] NOT NULL,
 	[EmergencyContactName] [varchar](50) NOT NULL,
+	[Occupation] [varchar](10) NOT NULL,
+	[MaritalStatus] [bit] NOT NULL,
+	[Children] [bit] NOT NULL,
  CONSTRAINT [PK_Patients] PRIMARY KEY CLUSTERED 
 (
 	[PatientsID] ASC
